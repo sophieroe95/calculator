@@ -6,7 +6,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-//2.create js class
+//2. create js class
 var Calculator =
 /*#__PURE__*/
 function () {
@@ -113,7 +113,7 @@ function () {
       } else {
         return integerDisplay;
       }
-    } //shows current and previous display 
+    } // shows current and previous display 
 
   }, {
     key: "updateDisplay",
@@ -129,7 +129,7 @@ function () {
   }]);
 
   return Calculator;
-}(); //1.create event handlers
+}(); //1. create event handlers
 
 
 var numberButtons = document.querySelectorAll('[data-number]');
@@ -140,7 +140,7 @@ var posNeg = document.querySelector('pos-neg');
 var allClearButton = document.querySelector('[data-all-clear]');
 var previousOperandTextElement = document.querySelector('[data-previous-operand]');
 var currentOperandTextElement = document.querySelector('[data-current-operand]');
-var calculator = new Calculator(previousOperandTextElement, currentOperandTextElement); //add functions to buttons
+var calculator = new Calculator(previousOperandTextElement, currentOperandTextElement); // add functions to buttons
 
 numberButtons.forEach(function (button) {
   button.addEventListener('click', function () {

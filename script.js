@@ -1,4 +1,4 @@
-//2.create js class
+//2. create js class
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement
@@ -84,7 +84,7 @@ class Calculator {
     }
   }
 
-//shows current and previous display 
+// shows current and previous display 
   updateDisplay() {
     this.currentOperandTextElement.innerText =
       this.getDisplayNumber(this.currentOperand)
@@ -97,7 +97,7 @@ class Calculator {
   }
 }
 
-//1.create event handlers
+//1. create event handlers
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButton = document.querySelector('[data-equals]')
@@ -109,7 +109,7 @@ const currentOperandTextElement = document.querySelector('[data-current-operand]
 
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
-//add functions to buttons
+// add functions to buttons
 numberButtons.forEach(button => {
   button.addEventListener('click', () => {
     calculator.appendNumber(button.innerText)
