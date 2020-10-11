@@ -139,26 +139,4 @@ deleteButton.addEventListener('click', button => {
   calculator.updateDisplay()
 })
 
-posNeg.addEventListener('click', button => {
-  calculator.makeCurrentValueNegative()
-  calculator.updateDisplay()
-})
-
-// $("#opp").click(function(opposite){
-//   var b=document.getElementById("output");
-//   var n=b.value; 
-//   n = n * -1;
-//   b.value = n; // assign the value of n back to the output
-// });
-
-// function makeCurrentValueNegative() {
-//   var currentValue = document.getElementById("current-operand").innerHTML
-//    console.log('currentValue in makeInputNegative is: ', currentValue)
-//    if(currentValue[0] === "-") {
-//     currentValue = currentValue.slice(1)
-//     $("#currentValue").html(currentValue)
-//    } else {
-//     $("#currentValue").prepend("-")
-//    }
-//    return currentValue
-//  }
+// code adapted from https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator
