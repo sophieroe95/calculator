@@ -55,7 +55,14 @@ body .calculator-grid .span-two {
 }
 body .calculator-grid .grey {
   background-color: grey;
+  font-size: 20px;
 }
 body .calculator-grid .orange {
   background-color: orange;
+}
+
+@media screen and (min-width: 620px) {
+  body .calculator-grid .grey {
+    font-size: 32px;
+  }
 }
